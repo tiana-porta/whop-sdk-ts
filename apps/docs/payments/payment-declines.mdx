@@ -57,7 +57,7 @@ When a payment is declined, you may receive one of these specific decline codes.
 | `invalid_country`                 | The billing country doesn't match your card's records. Please verify your billing address country and try again.                                                                                                                                                               |
 | `issuer_error`                    | Your bank detected an issue but couldn't specify the problem. Please try again in a few minutes or contact your bank directly for assistance.                                                                                                                                  |
 
-## What happens when a payment is declined
+## What happens when a subscription payment is declined
 
 When a customer's payment gets declined or fails, Whop takes several steps to try and recover the payment:
 
@@ -77,16 +77,16 @@ When a payment is declined, you can help the customer update their payment metho
 
 - Contact the customer to confirm they have sufficient funds and a working payment method
 - To update their payment method, ask them to follow these steps:
-  1. Go to https://whop.com/@me/settings/memberships/inactive
-  2. Click the **card** button on the affected subscription
-  3. Select **Update payment**
+  1. Go to https://whop.com/@me/settings/orders/
+  2. Click the **arrow** button on the affected subscription
+  3. Select **Update payment method**
   4. Add the new card details and save
 
 **Step 2: Manually retry the payment from your dashboard**
 
 1. Go to **Dashboard** \> **Payments**
-2. Click **Status** and select only **Failed**
-3. Select the failed payment
+2. Click **Status** and select only **Past due**
+3. Select the past due payment
 4. Click **Retry payment**
 
 When the payment processes successfully, Whop restores the customer’s access automatically.
